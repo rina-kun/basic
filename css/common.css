@@ -86,7 +86,7 @@ footer.globalfooter {
   position: relative; }
 
 /* 戻るボタン */
-.globalfooter .fas .fa-arrow-circle-up {
+.globalfooter .btn_returnTop {
     background: #7EC529;
     width: 2em;
     height: 2em;
