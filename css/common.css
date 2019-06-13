@@ -39,11 +39,8 @@ button {
 button:hover {
  cursor: pointer; }
 
-
-
-/* GLOBAL FOOTER
+/* header
 ========================================================= */
-
 /* breadcrumb */
 .breadcrumb {
   background: #fff;
@@ -70,6 +67,13 @@ button:hover {
   @media (min-width: 768px) {
     .breadcrumb {
       margin: 0; } }
+
+
+/* GLOBAL FOOTER
+========================================================= */
+.globalfoote {
+  position: relative;
+}
 
 /* 戻るボタン */
 .globalFooter .btn_returnTop {
