@@ -87,7 +87,7 @@ footer.globalfooter {
 
 /* 戻るボタン */
 .globalfooter .btn_returnTop {
-    background: #7EC529;
+/*    background: #7EC529;
     width: 2em;
     height: 2em;
     border-radius: 2em;
@@ -95,10 +95,13 @@ footer.globalfooter {
     color: #fff;
     display: inline-block;
     font-size: 20px;
-    text-align: center;
+    text-align: center;*/
     position: absolute;
     right: 1em;
     top: -1em; }
+.fa-arrow-circle-up {
+color: #7EC529;
+}
 /* .fal, .globalFooter ul a[target="_blank"]:after {
     font-family: 'Font Awesome';
     font-weight: 300;
