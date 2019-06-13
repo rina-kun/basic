@@ -90,19 +90,20 @@ footer.globalfooter {
 .pagetop {
   display: none;
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 3em;
+  right: 3em;
 }
 .pagetop a {
   display: block;
 }
 .pagetop a:hover {
   display: block;
-  background-color: #222;
-  color: #fff;
   text-decoration: none;
 }
 .fa-arrow-circle-up {
+color: #000;
+opacity: 0.5;
+}
+.fa-arrow-circle-up:hover {
 color: #7EC529;
 }
-
