@@ -39,8 +39,14 @@ button {
 button:hover {
  cursor: pointer; }
 
-/* header
+/*GLOBAL HEADER
 ========================================================= */
+/*header*/
+header.globalheader {
+
+}
+
+
 /* breadcrumb */
 .breadcrumb {
   background: #fff;
@@ -72,12 +78,12 @@ button:hover {
 
 /* GLOBAL FOOTER
 ========================================================= */
-.globalfoote {
+.globalfooter {
   position: relative;
 }
 
 /* 戻るボタン */
-.globalFooter i.fa-arrow-circle-up {
+.globalFooter .fa-arrow-circle-up {
     background: #7EC529;
     width: 2em;
     height: 2em;
