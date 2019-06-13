@@ -43,7 +43,7 @@ button:hover {
 /*GLOBAL HEADER
 ========================================================= */
 /*header*/
-header .globalheader {
+header.globalheader {
 
 }
 
@@ -82,7 +82,7 @@ header .globalheader {
 
 /* GLOBAL FOOTER
 ========================================================= */
-.globalfooter {
+footer.globalfooter {
   position: relative; }
 
 /* 戻るボタン */
