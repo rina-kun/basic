@@ -77,7 +77,7 @@ button:hover {
 }
 
 /* 戻るボタン */
-.globalFooter .fa-arrow-circle-up {
+.globalFooter i.fa-arrow-circle-up {
     background: #7EC529;
     width: 2em;
     height: 2em;
