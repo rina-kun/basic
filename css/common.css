@@ -50,6 +50,7 @@ button:hover {
   white-space: nowrap;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch; }
+
 .breadcrumb li {
     list-style: none;
     display: inline; }
@@ -76,7 +77,7 @@ button:hover {
 }
 
 /* 戻るボタン */
-.globalFooter .btn_returnTop {
+.globalFooter .fa-arrow-circle-up {
     background: #7EC529;
     width: 2em;
     height: 2em;
