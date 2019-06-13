@@ -83,29 +83,20 @@ header.globalheader {
 /* GLOBAL FOOTER
 ========================================================= */
 footer.globalfooter {
-  position: relative; }
+  position: relative;
+  margin-top: 40px; }
 
 /* 戻るボタン */
 .globalfooter .btn_returnTop {
-/*    background: #7EC529;
     width: 2em;
     height: 2em;
-    border-radius: 2em;
-    line-height: 2em;
-    color: #fff;
     display: inline-block;
     font-size: 20px;
-    text-align: center;*/
     position: absolute;
-    right: 1em;
-    top: -1em; }
+    right: 2em;
+    top: -1em;
+}
 .fa-arrow-circle-up {
 color: #7EC529;
 }
-/* .fal, .globalFooter ul a[target="_blank"]:after {
-    font-family: 'Font Awesome';
-    font-weight: 300;
-}
-.fa-arrow-circle-up:before {
-    content: "f0aa";
-} */
+
