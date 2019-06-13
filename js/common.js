@@ -16,6 +16,8 @@ var scroll = new SmoothScroll('a[href*="#"], [data-scroll]',{
   offset: isMobile(768) ? 50 : 30
 });
 
+//スクロールでトップに戻るボタン
+//http://makasete-web.net/sample/go-to-top-scroll/
 $(document).ready(function() {
     var pagetop = $('.pagetop');
     $(window).scroll(function () {

@@ -83,18 +83,24 @@ header.globalheader {
 /* GLOBAL FOOTER
 ========================================================= */
 footer.globalfooter {
-  position: relative;
+ /* position: relative;*/
   margin-top: 40px; }
 
 /* 戻るボタン */
-.globalfooter .btn_returnTop {
-    width: 2em;
-    height: 2em;
-    display: inline-block;
-    font-size: 20px;
-    position: absolute;
-    right: 2em;
-    top: -1em;
+.pagetop {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+.pagetop a {
+  display: block;
+}
+.pagetop a:hover {
+  display: block;
+  background-color: #222;
+  color: #fff;
+  text-decoration: none;
 }
 .fa-arrow-circle-up {
 color: #7EC529;
