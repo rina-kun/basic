@@ -39,10 +39,11 @@ button {
 button:hover {
  cursor: pointer; }
 
+
 /*GLOBAL HEADER
 ========================================================= */
 /*header*/
-header.globalheader {
+header .globalheader {
 
 }
 
@@ -63,27 +64,29 @@ header.globalheader {
 .breadcrumb li + li:before {
       content: "\f054";
       color: #b5d2ba;
-      margin: 0 .5em; }
+      margin: 0 .5em;
+    }
   @media (min-width: 576px) {
     .breadcrumb {
       background: none;
       font-size: 11px;
       overflow: visible;
       white-space: normal;
-      padding: 1em 0; } }
+      padding: 1em 0; }
+    }
   @media (min-width: 768px) {
     .breadcrumb {
-      margin: 0; } }
+      margin: 0; }
+    }
 
 
 /* GLOBAL FOOTER
 ========================================================= */
 .globalfooter {
-  position: relative;
-}
+  position: relative; }
 
 /* 戻るボタン */
-.globalFooter .fa-arrow-circle-up {
+.globalfooter .fa-arrow-circle-up {
     background: #7EC529;
     width: 2em;
     height: 2em;
@@ -95,8 +98,7 @@ header.globalheader {
     text-align: center;
     position: absolute;
     right: 1em;
-    top: -1em;
-}
+    top: -1em; }
 /* .fal, .globalFooter ul a[target="_blank"]:after {
     font-family: 'Font Awesome';
     font-weight: 300;
