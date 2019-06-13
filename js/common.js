@@ -16,19 +16,22 @@ var scroll = new SmoothScroll('a[href*="#"], [data-scroll]',{
   offset: isMobile(768) ? 50 : 30
 });
 
-//スクロールでトップに戻るボタン
+/*=======================================
+トップに戻るボタン
+=========================================*/
+//http://makasete-web.net/gototop-scroll
 //http://makasete-web.net/sample/go-to-top-scroll/
 $(document).ready(function() {
-    var pagetop = $('.pagetop');
+  var pagetop = $('.pagetop');
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
+       if ($(this).scrollTop() > 50) {//「100」はボタンの出現位置の指定で「100」の場合は上から100pxスクロールした時に表示
             pagetop.fadeIn();
-        } else {
+       } else {
             pagetop.fadeOut();
-        }
-    });
-    pagetop.click(function () {
-        $('body, html').animate({ scrollTop: 0 }, 500);
-        return false;
-    });
+            }
+       });
+       pagetop.click(function () {
+           $('body, html').animate({ scrollTop: 0 }, 500);//「500」はトップへ戻る速度
+              return false;
+   });
 });
