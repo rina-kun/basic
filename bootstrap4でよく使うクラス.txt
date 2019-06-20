@@ -1,0 +1,102 @@
+Bootstrap4のレイアウトは5段階構成
+Bootstrap4の画面サイズは5段階になりました。名前は1段階ずつずれてxssm、smmd、mdlg、lgxlに、576px未満が新たに追加されました。col-xs-*はなくなり、col-*になります。1200px以上サイズはcol-xl-*が新たに追加されました。
+xs  スマートフォン、組み込み端末など  576px未満 col-* auto
+sm  ファブレットなど  576px以上 col-sm-*  540px
+md  タブレットなど 768px以上 col-md-*  720px
+lg  ノートパソコンなどの省サイズモニタ 992px以上 col-lg-*  960px
+xl  テレビ、デスクトップPCなどの大画面モニタ 1200px以上  col-xl-*  1140px
+
+表示・非表示クラス
+非表示クラスは.hidden-* から .d-*-noneに変更になりました。
+576px未満非表示　.d-none
+576px以上非表示　.d-sm-none
+768px以上非表示　.d-md-none
+992px以上非表示　.d-lg-none
+1200px以上非表示　.d-xl-none
+
+display: inline　d-inline .d-sm-inline .d-md-inline .d-lg-inline .d-xl-inline
+display: inline-block 　.d-inline-block .d-sm-inline-block .d-md-inline-block .d-lg-inline-block .d-xl-inline-block
+display: block　.d-block .d-sm-block .d-md-block .d-lg-block .d-xl-block
+※例えば、992px以上のみ表示したい場合、blockコンテンツだと d-noneとd-lg-block を指定することになります。
+
+フォントサイズ
+デフォルトのフォントサイズが14pxから16pxに変わりました。単位も px から rem に変わり1rem＝16pxがベースになります。
+h1  2.5rem  40px
+h2  2rem  32px
+h3  1.75rem 28px
+h4  1.5rem  24px
+h5  1.25rem 20px
+1.125rem  18px
+h6、デフォルトのフォント 1rem  16px
+0.875rem  14px
+0.75rem 12px
+0.625rem  10px
+
+
+コンテンツの中央寄せ
+.center-blockクラスはなくなりました。
+<div class="mx-auto" style="width: 200px;">
+  中央寄せ
+</div>
+
+width 横幅
+w-25、w-50、w-75、w-100
+Width 25% Width 50% Width 75% Width 100%
+
+height 高さ
+h-25、h-50、h-75、h-100
+
+max-width:100%
+<img class="mw-100" src="..." alt="Max-width 100%">
+
+margin※paddingも一緒
+Bootstrap4ではmarginクラスも追加されました。画面サイズ毎にしたい場合はsm、md、lg、xlを付けて使用もできます。
+margin0　.m-0 .m-sm-0 .m-md-0 .m-lg-0 .m-xl-0
+margin0.25rem　.m-1 .m-sm-1 .m-md-1 .m-lg-1 .m-xl-1
+margin0.5rem　.m-2 .m-sm-2 .m-md-2 .m-lg-2 .m-xl-2
+margin1rem　.m-3 .m-sm-3 .m-md-3 .m-lg-3 .m-xl-3
+margin1.5rem　.m-4 .m-sm-4 .m-md-4 .m-lg-4 .m-xl-4
+margin3rem　.m-5 .m-sm-5 .m-md-5 .m-lg-5 .m-xl-5
+marginauto　.m-auto .m-sm-auto .m-md-auto .m-lg-auto .m-xl-auto
+
+margin-top　.mt-0 .mt-sm-0 .mt-md-0 .mt-lg-0 .mt-xl-0
+margin-right　.mr-0 .mr-sm-0 .mr-md-0 .mr-lg-0 .mr-xl-0
+
+margin-right margin-left　.mx-0 .mx-sm-0 .mx-md-0 .mx-lg-0 .mx-xl-0
+margin-top margin-bottom　.my-0 .my-sm-0 .my-md-0 .my-lg-0 .my-xl-0
+
+clearfix
+<div class="clearfix">...</div>
+
+画像
+<img src="..." class="rounded" alt="...">
+<img src="..." alt="..." class="img-thumbnail">
+<img src="..." class="img-fluid" alt="Responsive image">
+
+text-align　テキストの左・中央・右寄せ
+<p class="text-left">左寄せテキスト</p>
+<p class="text-center">中央寄せテキスト</p>
+※画面サイズ別
+Bootstrap4では画面サイズ毎にクラス分けもできるようになりました。
+.text-left .text-center .text-right　 ベースクラス、576px未満
+.text-sm-left .text-sm-center .text-sm-right　  576px以上
+.text-md-left .text-md-center .text-md-right　  768px以上
+.text-lg-left .text-lg-center .text-lg-right　  992px以上
+.text-xl-left .text-xl-center .text-xl-right 　 1200px以上
+
+float　コンテンツの左・右寄せ
+floatクラスは.pull-left、.pull-rightから名前が変わりました。
+<div class="float-left">...</div>
+<div class="float-right">...</div>
+<div class="float-none">...</div>
+※画面サイズ別
+.float-left .float-right .float-none  　ベースクラス、576px未満
+.float-sm-left .float-sm-right .float-sm-none 　576px以上
+.float-md-left .float-md-right .float-md-none 　768px以上
+.float-lg-left .float-lg-right .float-lg-none 　992px以上
+.float-xl-left .float-xl-right .float-xl-none 　1200px以上
+
+Flex動作を有効にする
+まずは、d-flexまたはd-inline-flexクラスを設定し、Flexコンテナーを作成します。
+https://webnetamemo.com/coding/bootstrap4/201906138320
+
